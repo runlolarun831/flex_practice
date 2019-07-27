@@ -1,0 +1,45 @@
+<html>
+  <head>
+<style>
+  * {
+    box-sizing: border-box;
+  }
+  body > div {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    align-content: space-around;
+    height: 100vh;
+  }
+  div > div {
+    border: solid 1px black;
+    height: 100px;
+    width: calc(100%/3 - 2rem);
+    margin: 1rem;
+  }
+  .long {
+    height: 150px;
+  }
+
+  @media (max-width: 600px) {
+    div > div {
+      width: 100%;
+
+    }
+  }
+  </style>
+  </head>
+  <body>
+    <div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div class='long'></div>
+      <div></div>
+      <div></div>
+      <div class='long'></div>
+      <div></div>
+    </div>
+  </body>
+</html>
